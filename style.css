@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  background-color: #fff;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  color: #4e0000;
+}
+p,
+li {
+  text-align: start;
+  line-height: 130%;
+  text-indent: 3em;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #910303;
+}
+button:hover {
+  background-color: #910303;
+}
+h1 {
+  color: #4e0000;
+}
+.first-cab,
+.second-cab,
+.footer {
+  display: flex;
+  align-items: center;
+}
+.first-cab {
+  padding: 7px;
+  background-color: #4e0000;
+  color: #ffff;
+  justify-content: flex-end;
+}
+.first-cab a {
+  font-size: 14px;
+  margin: 5px;
+}
+#email {
+}
+.second-cab,
+.explain-coffee {
+  background-color: #ffffff83;
+  justify-content: space-between;
+}
+.second-cab img {
+  width: 180px;
+  margin-left: 50px;
+  border-radius: 100%;
+}
+.second-cab h1 {
+  margin-right: 240px;
+  font-size: 150%;
+}
+h2 {
+  margin-left: 15px;
+  font-size: 120%;
+  font-weight: bold;
+}
+h3 {
+  font-size: 120%;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe h3 {
+  justify-content: flex-start;
+  font-size: 97%;
+}
+.subscribe {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". . . form form ."
+    ". . . form form ."
+    ". . . form form .";
+  grid-gap: 15px;
+  background: url("img/cafe.jpg") no-repeat 80px center;
+}
+input[type="text"],
+select {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 7px;
+  display: inline;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe button {
+  width: 100%;
+  background-color: #4e0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button {
+  background-color: #4e0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe form {
+  padding: 30px;
+  background-color: #f5f1f071;
+  grid-area: form;
+}
+
+.explain-coffee {
+  margin-left: 70px;
+  margin-right: 240px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "text1 text2 text4"
+    "text1 text2 text4"
+    "text1 text3 text5";
+  grid-gap: 15px;
+}
+
+#text1 {
+  grid-area: text1;
+}
+#text2 {
+  grid-area: text2;
+}
+#text3 {
+  grid-area: text3;
+}
+#text4 {
+  grid-area: text4;
+}
+#text5 {
+  grid-area: text5;
+}
+
+.coffee-3 {
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-right: 220px;
+}
+.coffee-3 #example {
+  background-color: #b1b1b141;
+  margin: 15px;
+  text-align: center;
+}
+.example-coffee {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.example-coffee p {
+  text-align: center;
+}
+
+.example-coffee img {
+  margin-top: 10px;
+  border-radius: 100%;
+  width: 200px;
+}
+
+.buy-coffee {
+  margin-left: 60px;
+  margin-right: 220px;
+}
+#buy-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#buy {
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+}
+#btn-buy {
+  padding: 20px;
+  width: 100%;
+}
+#exli {
+  display: flex;
+  padding: 10px;
+  border-bottom: #4e000070 solid 1px;
+  justify-content: center;
+  align-items: center;
+  font-size: 110%;
+  color: #000;
+}
+#rest {
+  font-style: italic;
+  font-size: 27px;
+  position: relative;
+  bottom: 15px;
+}
+#type {
+  background-color: #4e0000;
+  padding: 15px;
+  color: #fff;
+}
+#price {
+  font-style: italic;
+  font-size: 50px;
+  background-color: #614242;
+  padding: 30px;
+  color: #fff;
+}
+
+.video-coffe-area{
+  margin-left: 60px;
+  margin-right: 240px;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  text-align: center;
+}
+.video-coffe-area img {
+  width: 90px;
+}
+#video{
+  margin: 15px;
+  text-align: start;
+}
+#depoimentos div{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#depoimentos p{
+  margin: 15px;
+  border: #4e000023 solid 1px;
+  background-color: #4e00002d;
+
+}
+#melhor{
+  margin: 15px;
+  margin-right: 75px;
+  text-align: center;
+}
+#melhor img{
+  margin: 15px;
+  width: 350px;
+}
+
+.first-footer{
+  width: 100%;
+  padding:40px 0;
+  background: url("img/background-coffee.png");
+}
+
+.first-footer form{
+  display: inline-flex;
+}
+.first-footer input, button{
+  width: 100%;
+}
+.first-footer div, p, form{
+  text-align: center;
+}
+
+.footer {
+  font-size: 15px;
+  padding: 20px;
+  bottom: 0;
+  background-color: #4e0000;
+  justify-content: space-around;
+}
